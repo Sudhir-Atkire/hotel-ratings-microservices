@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 import com.example.demo.entity.Hotel;
+import com.example.demo.exception.HotelNotFoundException;
 import com.example.demo.repository.HotelRepository;
 import com.example.demo.service.IHotelService;
 
@@ -26,14 +27,14 @@ public class HotelServiceImpl implements IHotelService {
 
 	@Override
 	public Hotel getHotel(int hotelId) {
-		
-		return null;
+		return hotelRepository.findById(hotelId).orElseThrow(()-> new HotelNotFoundException("Hotel Not found for given ID  : "+hotelId));
+		 
 	}
 
 	@Override
 	public List<Hotel> getAllHotels() {
-		// TODO Auto-generated method stub
-		return null;
+		return hotelRepository.findAll();
+		
 	}
 
 	@Override

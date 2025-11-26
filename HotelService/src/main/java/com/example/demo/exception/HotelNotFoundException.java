@@ -3,11 +3,11 @@ package com.example.demo.exception;
 
 public class HotelNotFoundException extends RuntimeException{
 
-	HotelNotFoundException(){
+	public HotelNotFoundException(){
 	  super("Hotel Not Found!!!");	
 	}
 	
-	HotelNotFoundException(String msg){
+	public HotelNotFoundException(String msg){
 		 super(msg);	
 	}
 }
