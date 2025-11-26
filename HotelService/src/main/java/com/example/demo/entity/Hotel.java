@@ -30,4 +30,7 @@ public class Hotel {
 	
 	@NonNull
 	private String hotelLocation;
+	
+	@NonNull
+	private String about;
 }
