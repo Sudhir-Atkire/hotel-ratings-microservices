@@ -4,11 +4,12 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class HotelServiceApplication {
+public class RatingServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(HotelServiceApplication.class, args);
-		System.out.println("Hotel Service Started...");
+		SpringApplication.run(RatingServiceApplication.class, args);
+		
+		System.out.println("Rating Service Started....");
 	}
 
 }
