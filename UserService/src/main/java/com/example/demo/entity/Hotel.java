@@ -6,20 +6,16 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class Rating {
+@Builder
+public class Hotel {
 
-	private Integer ratingId;
-	
-	private Integer userId;
-	
 	private Integer hotelId;
 	
-	private int rating;
+	private String hotelName;
 	
-	private String feedback;
+	private String hotelLocation;
 	
-	private Hotel hotel;
+	private String about;
 }
